@@ -9,7 +9,8 @@ The locked brief is **one system for the whole deliverable**. Do not invent a ne
 3. **Fixed type roles** — Display / body / (optional) mono only. Do not introduce a third display face halfway down the page.
 4. **Consistent spacing & radius** — Use the same scale section-to-section (padding, gaps, corner radii).
 5. **Coherent motion** — Stick to the brief’s 2–4 effects and similar easing/duration family. Do not stack unrelated interaction styles on every block.
-6. **Revamps** — Apply the locked system across touched surfaces. Do not leave half the page on the old look unless the user asked for a **partial** restyle (then document the boundary).
+6. **Imagery grade** — Generated or chosen images share one lighting/grade language with the locked tokens (see [imagery.md](imagery.md)). No second art style mid-page.
+7. **Revamps** — Apply the locked system across touched surfaces. Do not leave half the page on the old look unless the user asked for a **partial** restyle (then document the boundary).
 
 ## Anti-patterns
 
@@ -28,4 +29,5 @@ Uniformity:
 - [ ] Type roles unchanged across sections
 - [ ] Spacing + radius scale consistent
 - [ ] Motion set limited to the brief’s 2–4 effects
+- [ ] Imagery grade matches the locked system (if used)
 ```

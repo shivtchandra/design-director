@@ -41,6 +41,13 @@ Fill every field before implementing UI.
 - CTA group:
 - Dominant visual idea:
 
+## Imagery
+
+- **Needed?** (yes/no + why)
+- **Hero brief + aspect:**
+- **Supporting (0–2):**
+- **Tool / prompts / fallback:**
+
 ## Mobile / responsive
 
 - **375px check:** (no horizontal scroll)

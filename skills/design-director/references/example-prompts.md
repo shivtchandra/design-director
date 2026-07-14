@@ -26,6 +26,8 @@ node scripts/search-effects.js "magnetic"
 node scripts/search-effects.js "24" --react
 ```
 
+**Imagery:** For landings, say you want a generated hero after tokens are locked (budget: 1 hero + up to 2 supporting). Example: `… then generate a full-bleed hero image matching the locked palette.`
+
 ---
 
 ## Recipes
@@ -36,6 +38,10 @@ node scripts/search-effects.js "24" --react
 
 ```
 Use the design-director skill. Design a landing page for a boutique running brand called “Voltstride” — dark, athletic, editorial. Plan first (brief + tokens + 2–3 effects), then build a single page.
+```
+
+```
+Use the design-director skill. Same Voltstride brief. After locking tokens, generate a full-bleed hero image (and up to 2 supporting stills) matching the palette, then implement.
 ```
 
 ### 2. New portfolio / product site

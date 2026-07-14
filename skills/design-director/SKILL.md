@@ -46,9 +46,10 @@ Design Director Progress:
 - [ ] 3. Tokens via search-designs
 - [ ] 4. Motion via search-effects (2–4 max)
 - [ ] 5. Write design brief artifact
-- [ ] 6. Implement
-- [ ] 7. Mobile / responsive guardrails
-- [ ] 8. Site uniformity
+- [ ] 6. Imagery (if needed)
+- [ ] 7. Implement
+- [ ] 8. Mobile / responsive guardrails
+- [ ] 9. Site uniformity
 ```
 
 ### 1. Brief
@@ -104,11 +105,20 @@ Pick **2–4** effects that serve the brief. Do not stack every category. Prefer
 
 Before writing UI code, fill [references/brief-template.md](references/brief-template.md) (in chat or a short markdown file the user can see). Do not skip this step.
 
-### 6. Implement
+### 6. Imagery (if needed)
 
-Apply locked tokens as **global** CSS variables / Tailwind theme tokens — one theme entry for the whole page/site. Match the host project stack. Reuse that theme in every section; do not restyle components with one-off colors or fonts. Wrap motion in `prefers-reduced-motion`. Never remove focus rings without a replacement.
+For landing / marketing / portfolio heroes, follow [references/imagery.md](references/imagery.md).
 
-### 7. Mobile / responsive guardrails
+- Decide after tokens are locked whether a real visual anchor is required
+- Budget: **1 full-bleed hero + up to 2 supporting** stills
+- Generate with the host image tool when available; otherwise emit prompts or use CSS / brand-asset fallbacks
+- Match locked palette and mood; no empty hero when imagery was required
+
+### 7. Implement
+
+Apply locked tokens as **global** CSS variables / Tailwind theme tokens — one theme entry for the whole page/site. Match the host project stack. Reuse that theme in every section; do not restyle components with one-off colors or fonts. Wire generated or fallback imagery into the hero (full-bleed). Wrap motion in `prefers-reduced-motion`. Never remove focus rings without a replacement.
+
+### 8. Mobile / responsive guardrails
 
 Required before calling the work done. See [references/mobile-guardrails.md](references/mobile-guardrails.md).
 
@@ -118,13 +128,14 @@ Required before calling the work done. See [references/mobile-guardrails.md](ref
 - Cursor / magnet / canvas-heavy effects **degrade or disable** on coarse pointers and under `prefers-reduced-motion`
 - Fixed `100vh` heroes and sticky chrome must not hide content under mobile browser chrome
 
-### 8. Site uniformity
+### 9. Site uniformity
 
 Required. See [references/uniformity.md](references/uniformity.md).
 
 - One locked system for the **entire** deliverable (not per-section vibes)
 - Shared tokens for color, type, radius, spacing
 - Motion limited to the brief’s 2–4 effects with a coherent feel
+- Imagery grade matches the same system (no mid-page art-style hop)
 
 ## Quality bar
 
@@ -134,6 +145,7 @@ Required. See [references/uniformity.md](references/uniformity.md).
 - Sound only after a user gesture
 - Pass the mobile / responsive checklist above
 - **One visual system across the site** — no section-level palette/font/motion drift
+- **No empty hero** when imagery was required; gens or fallbacks match the locked palette
 
 ## Scripts
 
@@ -150,3 +162,4 @@ Required. See [references/uniformity.md](references/uniformity.md).
 - [references/anti-defaults.md](references/anti-defaults.md)
 - [references/mobile-guardrails.md](references/mobile-guardrails.md)
 - [references/uniformity.md](references/uniformity.md)
+- [references/imagery.md](references/imagery.md)
