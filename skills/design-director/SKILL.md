@@ -21,18 +21,18 @@ For **effects-only** retrieval (already know the palette), prefer the sibling `p
 
 ## Example prompts
 
-Users get better results when they name this skill and say **plan first**. Full copy-paste recipes (new page, revamp, plan-only, light touch): [references/example-prompts.md](references/example-prompts.md).
+Users get better results when they name this skill and say **plan first**. Full library (SaaS, ecommerce, revamp, imagery, mobile-first, …): [references/example-prompts.md](references/example-prompts.md).
 
 ```
 Use the design-director skill. Design a landing page for a boutique running brand called “Voltstride” — dark, athletic, editorial. Plan first (brief + tokens + 2–3 effects), then build a single page.
 ```
 
 ```
-Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then revamp @src/pages/HomePage.jsx. Keep routing and copy; replace palette, type, and motion. Tone: dark, cinematic, technical.
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a waitlist landing page for “Relaykit” — calm, precise, product-led. One hero, email CTA, no dashboard chrome.
 ```
 
 ```
-Use the design-director skill. For “Voltstride” — dark, athletic, editorial — write only the design brief. Do not write UI code yet.
+Use the design-director skill. Same Voltstride brief. After locking tokens, generate a full-bleed hero image (and up to 2 supporting stills) matching the palette, then implement.
 ```
 
 ## Workflow (required order)

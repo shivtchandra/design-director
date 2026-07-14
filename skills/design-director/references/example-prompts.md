@@ -15,46 +15,118 @@ Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then
 - New build vs **revamp**
 - Keep vs replace: copy, URL/structure, colors, fonts, layout
 - Where the page lives (URL, `@path/to/File.jsx`, or “new route”)
-- Whether you want code after the brief, or **brief only**
+- Whether you want code after the brief, **brief only**, and/or **imagery**
+- Mobile-first or desktop-first (optional)
 
-**Revamps:** Ask the agent to inspect the existing page/files before locking a new direction so it does not blindly overwrite brand assets.
+**Revamps:** Ask the agent to inspect existing pages/files before locking a new direction.
 
-**Motion code:** After planning effects, agents retrieve snippets from the skill scripts folder with `--html` / `--react` (bundled in the install):
+**Motion:** After planning, retrieve snippets with `--html` / `--react` from the skill scripts folder.
 
-```bash
-node scripts/search-effects.js "magnetic"
-node scripts/search-effects.js "24" --react
-```
-
-**Imagery:** For landings, say you want a generated hero after tokens are locked (budget: 1 hero + up to 2 supporting). Example: `… then generate a full-bleed hero image matching the locked palette.`
+**Imagery:** After tokens lock — 1 full-bleed hero + up to 2 supporting stills (see [imagery.md](imagery.md)).
 
 ---
 
-## Recipes
+## A. Greenfield by vertical
 
-### 1. New landing page
+### Boutique product landing
 
-**When:** Greenfield brand page, nothing built yet.
+**When:** Consumer brand splash from scratch.
 
 ```
 Use the design-director skill. Design a landing page for a boutique running brand called “Voltstride” — dark, athletic, editorial. Plan first (brief + tokens + 2–3 effects), then build a single page.
 ```
 
-```
-Use the design-director skill. Same Voltstride brief. After locking tokens, generate a full-bleed hero image (and up to 2 supporting stills) matching the palette, then implement.
-```
+### Studio / portfolio
 
-### 2. New portfolio / product site
-
-**When:** Creator, studio, or product marketing site from scratch.
+**When:** Creator or ceramics / design studio site.
 
 ```
 Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a single-page site for “North Loom”, a ceramic studio. Audience: collectors and interior designers. Tone: quiet, tactile, warm-minimal. Prefer photography-led layout, not a dashboard. Use React + Tailwind if the repo already has them.
 ```
 
-### 3. Revamp an existing live site
+### SaaS waitlist / product marketing
 
-**When:** Brand already has a page and wants a visual redesign.
+**When:** B2B or prosumer product launch / waitlist.
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a waitlist landing page for “Relaykit” — a team inbox for async video updates. Tone: calm, precise, product-led. Audience: remote eng managers. One hero, short proof strip, email CTA — no dashboard chrome. Enforce site uniformity.
+```
+
+### Agency / services
+
+**When:** Studio selling strategy + build work.
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a services site for “Hearth & Grid”, a brand-and-build agency. Tone: sharp, editorial, confident. Sections: work, process, retainer CTA. Dark canvas; no purple SaaS look.
+```
+
+### Restaurant / hospitality
+
+**When:** Place-led site with atmosphere.
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a one-page site for “Casa Meridian”, a seaside restaurant. Tone: warm, luminous, late-evening. Emphasize atmosphere imagery (generate or prompt after tokens). Reservation CTA. Mobile-first menus and hours.
+```
+
+### Ecommerce collection / splash
+
+**When:** Product drop or capsule collection page.
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a capsule-collection page for “Fold Line” apparel. Tone: stark, geometric, archival. Grid of products with one magnetic CTA. Keep uniformity across cards (same radius, type, motion).
+```
+
+### Event / conference
+
+**When:** Single-event marketing page.
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build an event page for “Northbound Conf 2026”. Tone: kinetic, night-city, technical. Include date, venue, speakers teaser, ticket CTA. Prefer scroll motion over cursor spectacles for mobile.
+```
+
+### Personal brand / resume site
+
+**When:** Individual portfolio.
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a personal site for a product designer named “Mira Chen”. Tone: lucid, quiet, precise. Work grid + short about + contact. Avoid emoji and stock-people hero; abstract or process imagery only.
+```
+
+### Fintech / trust-heavy B2B
+
+**When:** Credibility and clarity over flash.
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a marketing homepage for “Ledgerlane”, SMB bookkeeping. Tone: trustworthy, clear, restrained. Strong hierarchy, readable type, minimal motion (1–2 effects). No neon, no purple gradients.
+```
+
+---
+
+## B. Imagery-forward
+
+### Generate hero after tokens
+
+```
+Use the design-director skill. Same Voltstride brief — dark, athletic, editorial. After locking tokens, generate a full-bleed hero image (and up to 2 supporting stills) matching the palette, then implement.
+```
+
+### Photography-led editorial + gens
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build an editorial landing for “Oak & Filament” furniture. Tone: material, slow, warm. After tokens, generate photography-style stills of wood grain / product close-ups (1 hero + 2 supporting), then implement full-bleed hero. Enforce imagery grade uniformity.
+```
+
+### No image tool — CSS atmosphere only
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Signal Yard”. Tone: nocturnal, radio, spare. Do not generate images — use CSS atmosphere from locked tokens for the hero. Still fill the imagery brief section as “fallback: CSS”.
+```
+
+---
+
+## C. Revamp
+
+### Live URL revamp
 
 ```
 Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then revamp our marketing homepage.
@@ -66,9 +138,7 @@ Constraints: no purple-gradient SaaS look; must stay on-brand for a fintech trus
 Inspect the current page feel from my description / screenshots before locking tokens.
 ```
 
-### 4. Revamp an in-repo page
-
-**When:** Code already exists in the workspace.
+### In-repo page
 
 ```
 Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then revamp @src/pages/HomePage.jsx (and its main template if needed).
@@ -78,9 +148,25 @@ Replace: colors, typography, hero composition, and motion.
 Tone: dark, cinematic, technical. Avoid AI-slop defaults (see anti-defaults).
 ```
 
-### 5. Brand already has tokens / DESIGN.md
+### Multi-page unify
 
-**When:** You have a catalog slug or local design tokens and want evolution, not a random new system.
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then unify visual system across @src/pages/HomePage.jsx, @src/pages/PricingPage.jsx, and @src/pages/AboutPage.jsx.
+
+Keep routes and copy. One shared theme tokens file — no per-page palette drift. Same type roles and 2–3 shared motion recipes site-wide.
+```
+
+### Partial restyle (one section)
+
+```
+Use the design-director skill. Plan first (brief + tokens + 1–2 effects). Partial restyle only: @src/pages/HomePage.jsx hero section. Keep below-the-fold as-is. Document the uniformity boundary in the brief (hero = new system; rest = legacy until later).
+```
+
+---
+
+## D. Tokens-first
+
+### Catalog slug evolve
 
 ```
 Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then restyle our landing page.
@@ -89,29 +175,49 @@ Base tokens on catalog slug `cursor` (run search-designs --slug cursor), but evo
 Keep existing section content in @src/pages/HomePage.jsx; only change the look and 2 micro-interactions.
 ```
 
-Or with a local file:
+### Local DESIGN.md
 
 ```
 Use the design-director skill. Plan first. Start from @src/data/designs/prmpt/DESIGN.md as the token source, then adapt for a lighter editorial product launch page. Don’t write code until the brief is filled.
 ```
 
-### 6. Plan only (no code yet)
+### Match a mood via search query
 
-**When:** You want alignment before implementation.
+```
+Use the design-director skill. Plan first. Run search-designs for “dark cinematic mono technical”, lock the best-fit slug, then build a product page for “Aperture Wire”. Tone: forensic, sleek, nocturnal. Then implement.
+```
+
+---
+
+## E. Scope controls
+
+### Plan only (no code)
 
 ```
 Use the design-director skill. For a boutique running brand “Voltstride” — dark, athletic, editorial — write only the design brief (brief + tokens from search-designs + 2–3 effects from search-effects). Do not write any UI code yet.
 ```
 
-### 7. Light touch (palette + type + tiny motion)
-
-**When:** Layout and copy stay; look needs a refresh.
+### Light touch
 
 ```
 Use the design-director skill. Plan first (brief + tokens + 1–2 effects). Light-touch restyle of @src/pages/HomePage.jsx: do not change layout or copy — only palette, typography, and 1–2 micro-interactions. Tone: confident, minimal, modern.
 ```
 
-### 8. Effects already decided
+### Mobile-first
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Pocket Ferry” transit app. Tone: civic, clear, daylight. Design and implement mobile-first at ~375px, then enhance desktop. Prefer tap-friendly motion; degrade cursor effects. Pass mobile guardrails before done.
+```
+
+### Brief + image prompts only (no code, no gen)
+
+```
+Use the design-director skill. Plan first for “Voltstride” — dark, athletic, editorial. Fill the brief including imagery section, but do not write UI code and do not call an image tool — emit Midjourney/Flux prompts for 1 hero + 2 supporting stills matching locked tokens.
+```
+
+---
+
+## F. Effects already decided
 
 **When:** Visual system is locked; you only need interaction recipes.
 
@@ -125,8 +231,6 @@ Use the portfolio-effects skill. Find a magnetic button and a scroll-linked marq
 
 ## After updating skill docs
 
-Re-install so the global agent copy picks up new files:
-
 ```bash
-npx skills add . --skill design-director -g -y
+npx skills add shivtchandra/design-director -g -y
 ```

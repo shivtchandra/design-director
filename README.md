@@ -124,13 +124,25 @@ Install both: guidelines for review, Design Director for direction + assets.
 Use the design-director skill. Design a landing page for a boutique running brand called “Voltstride” — dark, athletic, editorial. Plan first (brief + tokens + 2–3 effects), then build a single page.
 ```
 
+**SaaS waitlist**
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a waitlist landing page for “Relaykit” — calm, precise, product-led. One hero, email CTA, no dashboard chrome.
+```
+
+**With generated hero imagery**
+
+```
+Use the design-director skill. Same Voltstride brief. After locking tokens, generate a full-bleed hero image (and up to 2 supporting stills) matching the palette, then implement.
+```
+
 **Revamp an existing page**
 
 ```
 Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then revamp @src/pages/HomePage.jsx. Keep routing and copy; replace palette, type, and motion. Tone: dark, cinematic, technical.
 ```
 
-More: [skills/design-director/references/example-prompts.md](skills/design-director/references/example-prompts.md)
+More verticals (agency, restaurant, ecommerce, event, fintech, multi-page unify, mobile-first, plan-only, …): [skills/design-director/references/example-prompts.md](skills/design-director/references/example-prompts.md)
 
 ---
 
