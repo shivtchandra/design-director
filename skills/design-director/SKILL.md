@@ -21,18 +21,18 @@ For **effects-only** retrieval (already know the palette), prefer the sibling `p
 
 ## Example prompts
 
-Users get better results when they name this skill and say **plan first**. Full library (SaaS, ecommerce, revamp, imagery, mobile-first, …): [references/example-prompts.md](references/example-prompts.md).
+Users get better results when they name this skill and say **plan first**. Full library (SaaS, unconventional poster/sticker flavors, revamp, imagery, …): [references/example-prompts.md](references/example-prompts.md).
 
 ```
 Use the design-director skill. Design a landing page for a boutique running brand called “Voltstride” — dark, athletic, editorial. Plan first (brief + tokens + 2–3 effects), then build a single page.
 ```
 
 ```
-Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a waitlist landing page for “Relaykit” — calm, precise, product-led. One hero, email CTA, no dashboard chrome.
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Peel & Static” sticker club. Flavor: sticker-paste zine — die-cut collage, locked sticker palette, mixed display lettering. Intentional sticker exception; uniform site-wide.
 ```
 
 ```
-Use the design-director skill. Same Voltstride brief. After locking tokens, generate a full-bleed hero image (and up to 2 supporting stills) matching the palette, then implement.
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “POST ROOM”. Flavor: oversized poster — type fills the hero; 2–3 spot colors only.
 ```
 
 ## Workflow (required order)

@@ -26,3 +26,9 @@ Hard bans for AI-generic looks. If the brief drifts toward these, pick a sharper
 - Atmosphere: gradients, photography, texture, or pattern — not empty white/black alone
 - Motion that earns its place (2–4 effects) with reduced-motion fallbacks
 - Layouts that hold at ~375px without hover-only primary actions (see mobile-guardrails.md)
+
+## Intentional exceptions
+
+Sticker-paste, oversized poster type, utility signage, receipt/blueprint/scoreboard, broadsheet-as-concept, and similar looks are **allowed only when the user prompt or brief names that flavor**. Document the exception in the brief; still enforce [uniformity.md](uniformity.md) (one system site-wide) and [mobile-guardrails.md](mobile-guardrails.md). See example-prompts **section G**.
+
+Without an explicit flavor name, the bans above still apply.

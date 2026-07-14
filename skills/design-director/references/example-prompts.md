@@ -229,6 +229,86 @@ Use the portfolio-effects skill. Find a magnetic button and a scroll-linked marq
 
 ---
 
+## G. Unconventional / experimental flavors
+
+**When:** You want a memorable, one-of-a-kind look — poster type, sticker-paste, print, utility signage, etc.
+
+**Rules:** Name the flavor in the brief. Treat as an **intentional anti-default exception** (see [anti-defaults.md](anti-defaults.md)). Still pass **mobile** + **uniformity**: one weird system site-wide, not a different vibe per section.
+
+### Oversized poster (type is the hero)
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “POST ROOM” print studio. Flavor: oversized poster — flat ink fields, 2–3 spot colors only. Display type fills the first viewport; type IS the image. No photography required. Intentional poster aesthetic — document exception to usual hero-media rules. Enforce uniformity.
+```
+
+### Sticker-paste zine
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Peel & Static”, a sticker club. Flavor: sticker-paste zine — die-cut shapes, paper tooth, collage layers on one locked sticker palette. Mixed display lettering as stickers on a grid; not random floating SaaS badges. Intentional sticker exception — same language site-wide. Mobile: tap targets ≥44px on stickers/CTAs.
+```
+
+### Risograph / misregister
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a page for “Two Drum Press”. Flavor: risograph — exactly two ink colors, soft coarse grain, slight channel misregister on headings. No gradients, no purple glow. Type: soft, slightly imperfect print feel. Motion: subtle ink settle only.
+```
+
+### Highway / utility signage
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Lane Mark”, a wayfinding API. Flavor: highway utility signage — safety yellow/black OR interstate blue/white only. Condensed industrial sans; UI reads as road signs. No Inter/Roboto. Motion: hard cuts / tabular flips, not soft SaaS fades.
+```
+
+### Thermal receipt
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a microsite for “Tab Total”, tip-pooling for bars. Flavor: thermal receipt — pink/gray paper, monospace as the brand voice, totals and line items as layout. Thin left margin like a printer roll. Intentional mono-forward exception to “don’t only use system stacks.”
+```
+
+### Architectural blueprint
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a site for “Trace & Plumb”, architecture studio. Flavor: blueprint — pale cyan field, graphite lines, caption ticks. Technical labels + one sparse display face. Avoid cream+terracotta editorial AI. Motion: line draws / pan across plates.
+```
+
+### LED scoreboard
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Buzzer Seq”, amateur league scores. Flavor: LED scoreboard — black field, amber OR green matrix (not purple neon). Modular numeral type; game-clock grammar for stats. Keep first viewport to brand + clock + CTA — not a dense dashboard.
+```
+
+### Exhibition wall
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a page for “Room 14”, a small gallery. Flavor: exhibition wall — museum white, caption bars, didactic hierarchy. Quiet display; wall-label typography. No card-grid hero. Optional generated art stills after tokens (1 hero + ≤2).
+```
+
+### Cassette J-card / vinyl center
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Side B Tapes”. Flavor: cassette J-card / vinyl center label — die-cut circle motif, spine stripes, compact stacked titles. Limited ink set. Type: tight title stacks; spine-like vertical accents allowed if mobile-safe.
+```
+
+### Anti-Swiss broken grid
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a portfolio for “Off Axis Atelier”. Flavor: anti-Swiss — one grotesque family only (no Inter), strict modules but deliberately off-axis. Rules and crop marks as atmosphere. Intentional broken-grid; still uniform site-wide.
+```
+
+### Perfume strip / silent luxury
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Vesper Atelier” fragrance. Flavor: perfume strip / silent luxury — near-monochrome + one fragrance accent only. Ultrathin display + restrained body. Huge whitespace; almost no motion (max 1 effect). No sticker/glitch language.
+```
+
+### Spray / stencil street
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then build a landing for “Wet Paint Co-op”. Flavor: spray/stencil street — high-contrast spray fill, stencil-like display, limited ink set. Rough edges OK as texture; keep accessibility/contrast. Not emoji, not purple glow. Uniform stencil grammar across sections.
+```
+
+---
+
 ## After updating skill docs
 
 ```bash
