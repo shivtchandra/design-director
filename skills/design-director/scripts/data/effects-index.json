@@ -1,0 +1,1080 @@
+{
+  "generatedAt": "2026-07-14T08:21:57.971Z",
+  "total": 71,
+  "effects": [
+    {
+      "n": "01",
+      "cat": "Text & Type",
+      "complexity": "easy",
+      "title": "Scramble reveal",
+      "tech": [
+        "JS",
+        "IntersectionObserver"
+      ],
+      "desc": "Letters cycle through random characters before resolving to the real text when the element enters the viewport. Creates a decoding or transmission effect.",
+      "example": "Heading enters view → X@K#9 → PROJECTS in ~800ms. Each character resolves left-to-right with a 30ms stagger.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "02",
+      "cat": "Text & Type",
+      "complexity": "easy",
+      "title": "Typewriter with erase loop",
+      "tech": [
+        "JS",
+        "setInterval"
+      ],
+      "desc": "Text types out character-by-character, pauses, deletes, and replaces with an alternate string. Loops indefinitely for hero subtitles with multiple identities.",
+      "example": "'I build things that ship.' → erases → 'I ship things that last.' → loops. ~60ms per character, 1.5s pause at end.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "03",
+      "cat": "Text & Type",
+      "complexity": "medium",
+      "title": "Split-word hover warp",
+      "tech": [
+        "CSS",
+        "JS",
+        "perspective"
+      ],
+      "desc": "Each word is independently wrapped. On hover, that word skews or rotates slightly on its axis, like a lens passing over it.",
+      "example": "Hover over 'BUILT' → that word tilts ~5° on Y-axis and returns. Other words unaffected.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "04",
+      "cat": "Text & Type",
+      "complexity": "easy",
+      "title": "Counter odometer",
+      "tech": [
+        "JS",
+        "IntersectionObserver"
+      ],
+      "desc": "Numbers count up from zero on viewport entry. Each digit rolls through like a slot machine. Used for stats, years, counts.",
+      "example": "0 → 250+ resumes analyzed, counting at ~15 per frame. Eases out near the target.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "05",
+      "cat": "Text & Type",
+      "complexity": "medium",
+      "title": "Gradient text sweep",
+      "tech": [
+        "CSS",
+        "animation"
+      ],
+      "desc": "A shimmer passes over display text in a loop. Text is transparent and clips an animated gradient background.",
+      "example": "Hero name has a slow left-to-right light sweep every 4s — as if a spotlight passes across it.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "06",
+      "cat": "Text & Type",
+      "complexity": "medium",
+      "title": "Glitch flicker",
+      "tech": [
+        "CSS",
+        "JS",
+        "clip-path"
+      ],
+      "desc": "Text briefly corrupts with RGB channel offsets and clip-path slices — like a VHS glitch. Triggers on hover or on a timer. 3–5 frames, very fast.",
+      "example": "Hover 'EXPERIENCE' → red and blue ghost offsets appear for 80ms then snap clean. Each trigger is slightly different.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "07",
+      "cat": "Text & Type",
+      "complexity": "easy",
+      "title": "Blinking cursor caret",
+      "tech": [
+        "CSS"
+      ],
+      "desc": "A thin blinking cursor | appears after any typewriter or static heading, reinforcing the terminal/code aesthetic. Pure CSS, single pseudo-element.",
+      "example": "'Available 2026|' — the caret blinks at 1s intervals. Stops blinking when the line finishes typing.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "08",
+      "cat": "Text & Type",
+      "complexity": "medium",
+      "title": "Redacted reveal",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "Text starts fully redacted (black bars covering each word). On viewport entry or hover, bars dissolve left-to-right to reveal the real content underneath.",
+      "example": "'████ ████ ████' → scrolls into view → bars shrink away word by word to reveal 'What I've Built'.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "09",
+      "cat": "Text & Type",
+      "complexity": "easy",
+      "title": "Line draw underline",
+      "tech": [
+        "CSS",
+        "SVG"
+      ],
+      "desc": "Hovering a nav link or heading draws an SVG underline from left to right via stroke-dashoffset animation. Much more refined than a plain CSS underline.",
+      "example": "Hover 'Projects' in nav → a hand-drawn style underline traces itself in 300ms. Erases in reverse on mouse-leave.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "10",
+      "cat": "Text & Type",
+      "complexity": "hard",
+      "title": "Morphing headline",
+      "tech": [
+        "JS",
+        "FLIP",
+        "Web Animations API"
+      ],
+      "desc": "The hero headline's words physically rearrange and resize between two states as you hover or scroll. Uses FLIP animation for performant layout transitions.",
+      "example": "Default: 'I build things.' Hover → words spread apart, 'build' grows to 3x, 'things' fades. Like a poster reformatting itself.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "11",
+      "cat": "Scroll",
+      "complexity": "easy",
+      "title": "Ambient glow color shift",
+      "tech": [
+        "Framer Motion",
+        "IntersectionObserver"
+      ],
+      "desc": "A radial gradient behind all sections slowly transitions hue as sections scroll into view. Each section has an assigned color that cross-fades at 1.2s.",
+      "example": "Projects → indigo glow. Scroll to Experience → shifts to amber over 1.2s. No hard cuts.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "12",
+      "cat": "Scroll",
+      "complexity": "easy",
+      "title": "Kinetic hero exit",
+      "tech": [
+        "Framer Motion",
+        "useScroll"
+      ],
+      "desc": "Name block and subtitle have different scroll-driven Y offsets and opacity curves. They dissolve upward at slightly different rates.",
+      "example": "Name exits at translateY(-60px), subtitle at -30px, both fade by 40% scroll depth. Feels like a camera dolly.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "13",
+      "cat": "Scroll",
+      "complexity": "easy",
+      "title": "Reading progress bar",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "A 1–2px line at the top of the viewport fills from left to right as the user scrolls. Zero dependencies.",
+      "example": "At 50% scroll depth the bar is exactly half full. Color matches the current section's accent.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "14",
+      "cat": "Scroll",
+      "complexity": "easy",
+      "title": "Section number counter",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "A fixed indicator shows '02 / 05' style numbering that ticks forward as you scroll between named sections.",
+      "example": "02 / 05 sits at left center on desktop, updates on IntersectionObserver with a 200ms fade.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "15",
+      "cat": "Scroll",
+      "complexity": "easy",
+      "title": "Stagger card reveal",
+      "tech": [
+        "Framer Motion",
+        "IntersectionObserver"
+      ],
+      "desc": "Grid items enter with a 60–80ms stagger between each. More dramatic than a plain fade-in.",
+      "example": "4 cards: card 1 at 0ms, card 2 at 60ms, card 3 at 120ms — all with translateY(24px → 0) and fade.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "16",
+      "cat": "Scroll",
+      "complexity": "easy",
+      "title": "Horizontal marquee ticker",
+      "tech": [
+        "CSS",
+        "animation"
+      ],
+      "desc": "A continuous scrolling strip of tech stack items moves left on loop. Pauses or reverses on hover.",
+      "example": "React · Next.js · Firebase · Tailwind · scrolling left at 40px/s. Hover → pause.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "17",
+      "cat": "Scroll",
+      "complexity": "hard",
+      "title": "Scroll-jacked vinyl speed",
+      "tech": [
+        "JS",
+        "RAF",
+        "scroll velocity"
+      ],
+      "desc": "Vinyl rotation speed is driven by scroll velocity. Fast scroll → fast spin. Scroll up → reverse spin.",
+      "example": "Rapid downscroll makes the vinyl blur-spin. Let go and it coasts to a stop.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "18",
+      "cat": "Scroll",
+      "complexity": "medium",
+      "title": "Parallax layer stack",
+      "tech": [
+        "JS",
+        "useScroll",
+        "CSS transform"
+      ],
+      "desc": "Multiple layers in the hero (background, midground, text) move at different rates on scroll — deeper layers move slower. Depth without WebGL.",
+      "example": "Background texture moves at 0.2x scroll speed, vinyl at 0.5x, heading at 1x. Creates 3D depth as you scroll down.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "19",
+      "cat": "Scroll",
+      "complexity": "medium",
+      "title": "Scroll-triggered line draw",
+      "tech": [
+        "SVG",
+        "IntersectionObserver"
+      ],
+      "desc": "An SVG connector line or decorative element draws itself as it enters the viewport via stroke-dashoffset. Draws at a speed tied to scroll position.",
+      "example": "A vertical timeline line draws downward as you scroll through the Experience section, revealing each job as it catches up.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "20",
+      "cat": "Scroll",
+      "complexity": "easy",
+      "title": "Section fade-in blur",
+      "tech": [
+        "CSS",
+        "IntersectionObserver"
+      ],
+      "desc": "Sections enter from slightly blurred (blur: 6px) and transparent, resolving to sharp and fully visible on entry. More cinematic than a plain opacity fade.",
+      "example": "Experience section is blur(6px) opacity(0) off-screen. Enters viewport → transitions to blur(0) opacity(1) in 600ms.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "21",
+      "cat": "Scroll",
+      "complexity": "easy",
+      "title": "Sticky section title",
+      "tech": [
+        "CSS",
+        "position: sticky"
+      ],
+      "desc": "Each section's heading sticks to the top of the viewport as you scroll through its content, then unsticks when the next section arrives. Pure CSS.",
+      "example": "'Where I've Worked' sticks at 24px from top while scrolling through job entries. Replaced by 'What I've Built' when that section arrives.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "22",
+      "cat": "Scroll",
+      "complexity": "hard",
+      "title": "Scroll-driven clip reveal",
+      "tech": [
+        "CSS scroll-timeline",
+        "clip-path"
+      ],
+      "desc": "Content is masked by a clip-path that expands as you scroll — like a curtain lifting. Uses the native CSS scroll-timeline API, no JS.",
+      "example": "Project cards are hidden behind a rect clip-path. As you scroll, the clip expands downward revealing more cards pixel-by-pixel.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "23",
+      "cat": "Cursor",
+      "complexity": "easy",
+      "title": "Custom cursor",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "Replaces the system cursor with a styled element. Scales up on hover over links, morphs on hover over vinyls. Fine-pointer only.",
+      "example": "Default: 12px ring. Over links: scales to 28px. Over vinyl: becomes a hand icon.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "24",
+      "cat": "Cursor",
+      "complexity": "medium",
+      "title": "Magnetic button",
+      "tech": [
+        "JS",
+        "spring physics"
+      ],
+      "desc": "Buttons attract the cursor when within ~80px. The button nudges toward the cursor. Both snap back with spring on mouse-leave.",
+      "example": "Cursor enters 80px of 'Get in touch' → button drifts max 8px toward cursor. Mouse leaves → spring snap in ~200ms.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "25",
+      "cat": "Cursor",
+      "complexity": "medium",
+      "title": "Cursor trail particles",
+      "tech": [
+        "Canvas",
+        "RAF"
+      ],
+      "desc": "Small fading particles follow the cursor with ~300ms decay. Canvas-based. Matches the current section's accent color.",
+      "example": "Move cursor quickly → burst of 6 small indigo dots trailing behind, each fading opacity 1 → 0 over 300ms.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "26",
+      "cat": "Cursor",
+      "complexity": "easy",
+      "title": "Hover ripple",
+      "tech": [
+        "CSS",
+        "JS"
+      ],
+      "desc": "Clicking anywhere on a dark section emits a circular ripple from the click point, expanding and fading over 600ms.",
+      "example": "Click hero background → a 2px-border circle expands to ~200px diameter and fades. Outline ring only, no fill.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "27",
+      "cat": "Cursor",
+      "complexity": "easy",
+      "title": "Cursor label follow",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "A small text label follows the cursor when hovering specific elements — showing a contextual hint. Disappears on mouse-leave.",
+      "example": "Hover a project card → a small label 'View project' trails the cursor at 8px offset. Hover the vinyl → label says 'Scratch me'.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "28",
+      "cat": "Cursor",
+      "complexity": "medium",
+      "title": "Elastic cursor blob",
+      "tech": [
+        "JS",
+        "SVG",
+        "spring"
+      ],
+      "desc": "The custom cursor is an SVG blob that stretches and deforms based on movement velocity. Fast moves elongate it in the direction of travel.",
+      "example": "Slow cursor: perfect circle. Fast rightward swipe: blob stretches into a horizontal oval, snaps back on stop.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "29",
+      "cat": "Cursor",
+      "complexity": "easy",
+      "title": "Cursor color sync",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "The custom cursor ring changes color to match the current section's ambient color. Transitions smoothly alongside the background glow shift.",
+      "example": "On Projects: cursor ring is indigo. Scroll to Contact: cursor shifts to emerald. Matches the ambient glow exactly.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "30",
+      "cat": "Card / Object",
+      "complexity": "medium",
+      "title": "3D holographic card tilt",
+      "tech": [
+        "JS",
+        "CSS perspective"
+      ],
+      "desc": "Cards tilt on X/Y axes (up to 8°) tracking cursor position. A specular highlight overlay moves inversely. Spring-smooth on mouse-leave.",
+      "example": "Cursor at top-left → card tilts rotateX(4deg) rotateY(-4deg), highlight shifts to match. Mouse leaves → springs flat.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "31",
+      "cat": "Card / Object",
+      "complexity": "medium",
+      "title": "Card flip on double-click",
+      "tech": [
+        "CSS",
+        "JS"
+      ],
+      "desc": "Double-clicking a project card rotates it 180° to reveal a back face with tech stack and links. Flip back on second double-click.",
+      "example": "Double-click 'Resumit' → flips to reveal stack, a one-liner, and a GitHub link. Smooth 400ms ease.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "32",
+      "cat": "Card / Object",
+      "complexity": "easy",
+      "title": "Spotlight hover",
+      "tech": [
+        "JS",
+        "CSS radial-gradient"
+      ],
+      "desc": "A radial gradient spotlight follows the cursor over dark cards, revealing a brighter version of the background. Card doesn't move.",
+      "example": "Move cursor over dark card → 200px soft glow follows it, as if holding a torch. Stops on mouse-leave.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "33",
+      "cat": "Card / Object",
+      "complexity": "hard",
+      "title": "Vinyl scratchable record",
+      "tech": [
+        "JS",
+        "RAF",
+        "Web Audio"
+      ],
+      "desc": "RAF-driven vinyl. Click-drag to rotate it manually, pausing the spin. Release to coast back to speed. Web Audio crackle on grab.",
+      "example": "Drag left → vinyl follows delta, spinning backward. Release → RAF eases back to 33RPM. Audio scratch on grab.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "34",
+      "cat": "Card / Object",
+      "complexity": "medium",
+      "title": "Hover border trace",
+      "tech": [
+        "JS",
+        "CSS",
+        "conic-gradient"
+      ],
+      "desc": "On hover, a glowing border traces around the card edges as if being drawn. Uses a rotating conic-gradient clipped to the border path.",
+      "example": "Mouse enters card → a bright line races around the border perimeter in 600ms, leaving a faint persistent glow.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "35",
+      "cat": "Card / Object",
+      "complexity": "easy",
+      "title": "Image parallax on tilt",
+      "tech": [
+        "JS",
+        "CSS transform"
+      ],
+      "desc": "Inside a tilting card, the thumbnail image shifts in the opposite direction to the tilt — as if it's a window looking into a 3D space.",
+      "example": "Card tilts left → image inside shifts right by 8px. Creates the illusion of depth between the card frame and its content.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "36",
+      "cat": "Card / Object",
+      "complexity": "medium",
+      "title": "Expand to modal",
+      "tech": [
+        "Framer Motion",
+        "layoutId"
+      ],
+      "desc": "Clicking a project card smoothly expands it into a full-screen modal using Framer Motion's layoutId. The card's position animates to fill the screen.",
+      "example": "Click Resumit card → it expands from its grid position to a full overlay. Close → contracts back to the exact grid cell.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "37",
+      "cat": "Card / Object",
+      "complexity": "easy",
+      "title": "Tag cloud hover scatter",
+      "tech": [
+        "JS",
+        "CSS",
+        "random offset"
+      ],
+      "desc": "Tech stack tags on a card are normally clustered. On card hover, they scatter to random positions with a spring, then regroup on mouse-leave.",
+      "example": "Hover project card → React · Firebase · OpenAI tags drift apart by 12–20px each in random directions. Mouse-leave → spring back together.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "38",
+      "cat": "Ambient",
+      "complexity": "easy",
+      "title": "Live availability dot",
+      "tech": [
+        "Firebase",
+        "CSS animation"
+      ],
+      "desc": "A pulsing dot next to 'Available' status is driven by a Firebase realtime value. Change the DB field live without a deploy.",
+      "example": "status: 'available' → green pulse. 'busy' → amber. 'unavailable' → red static.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "39",
+      "cat": "Ambient",
+      "complexity": "easy",
+      "title": "Now playing section card",
+      "tech": [
+        "JS",
+        "IntersectionObserver"
+      ],
+      "desc": "A persistent mini card styled like a music player shows the current section as a track. Updates as you scroll.",
+      "example": "Scroll to Experience → card shows ▶ Where I've Worked — 1:42. Time increments in real seconds.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "40",
+      "cat": "Ambient",
+      "complexity": "hard",
+      "title": "GLSL noise background",
+      "tech": [
+        "WebGL",
+        "GLSL"
+      ],
+      "desc": "A slow-moving Perlin noise shader tinted to the current section's accent color. GPU-light as a single fullscreen quad.",
+      "example": "Projects: dark indigo noise drifts. Experience: dark amber. Transitions follow the 1.2s ambient glow timeline.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "41",
+      "cat": "Ambient",
+      "complexity": "medium",
+      "title": "Star field depth",
+      "tech": [
+        "Canvas",
+        "RAF"
+      ],
+      "desc": "A very subtle parallax star field (10–15% opacity) drifts slowly in the background. Each star layer moves at a different speed on scroll.",
+      "example": "50 tiny white dots distributed across 3 depth layers. Scrolling makes near-stars move faster, distant ones barely drift.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "42",
+      "cat": "Ambient",
+      "complexity": "easy",
+      "title": "Time-of-day tint",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "The page's ambient glow tint shifts subtly based on the visitor's local time. Warm amber in the evening, cool blue in the morning. Runs once on load.",
+      "example": "Visit at 9pm → background has a very subtle warm amber cast. Visit at 9am → slightly cooler blue-white. 5% opacity max, never jarring.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "43",
+      "cat": "Ambient",
+      "complexity": "easy",
+      "title": "Visitor count live",
+      "tech": [
+        "Firebase",
+        "realtime"
+      ],
+      "desc": "A small '14 people visited today' counter near the footer updates via Firebase realtime. Resets at midnight. Adds a sense of liveness.",
+      "example": "Footer shows 14 visitors today — increments on each unique session. Updates live if two tabs are open.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "44",
+      "cat": "Ambient",
+      "complexity": "easy",
+      "title": "Breathing hero bg",
+      "tech": [
+        "CSS",
+        "animation"
+      ],
+      "desc": "The hero background very slowly scales between 100% and 103% on a 6s loop — like the page is breathing. Subtle enough to be subliminal.",
+      "example": "Background texture slowly grows and contracts. At 6s period, most visitors won't consciously notice but will feel the page is alive.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "45",
+      "cat": "Audio",
+      "complexity": "easy",
+      "title": "Ambient sound toggle",
+      "tech": [
+        "Web Audio API"
+      ],
+      "desc": "A speaker icon activates a faint lo-fi vinyl crackle loop generated entirely in Web Audio — no file needed. Off by default.",
+      "example": "Click speaker → Web Audio generates pink noise filtered to crackle spectrum at ~8% volume. Toggle off → instant silence.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "46",
+      "cat": "Audio",
+      "complexity": "easy",
+      "title": "UI click sounds",
+      "tech": [
+        "Web Audio API"
+      ],
+      "desc": "Every button press plays a synthesized 5ms mechanical click — short sine burst with fast decay. Respects prefers-reduced-motion.",
+      "example": "Click 'Send Message' → barely-audible tick (800Hz, 5ms decay, gain 0.08).",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "47",
+      "cat": "Audio",
+      "complexity": "medium",
+      "title": "Section ambient tones",
+      "tech": [
+        "Web Audio",
+        "OscillatorNode"
+      ],
+      "desc": "Each section has an assigned drone note (very low volume). As you scroll between sections, the tone cross-fades. Completely subliminal.",
+      "example": "Projects: low drone in D minor. Experience: shifts to F. Only audible on headphones at max volume — felt more than heard.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "48",
+      "cat": "Audio",
+      "complexity": "easy",
+      "title": "Hover chime",
+      "tech": [
+        "Web Audio API"
+      ],
+      "desc": "Hovering interactive elements plays a very soft chime (triangle wave, ~200ms). Different pitch per element type — links vs buttons vs cards.",
+      "example": "Hover a project card → soft 880Hz chime. Hover a nav link → 1200Hz. Gain 0.04 — barely there but satisfying.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "49",
+      "cat": "Loading",
+      "complexity": "medium",
+      "title": "Name letterpress intro",
+      "tech": [
+        "JS",
+        "Framer Motion"
+      ],
+      "desc": "On first load, the site name assembles letter by letter with a slight bounce on each character's landing. Then the rest of the page fades in.",
+      "example": "F → FO → FOL → FOLIO. Each letter drops in from y:-20 with a spring. Full name visible by ~800ms, then hero content fades in.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "50",
+      "cat": "Loading",
+      "complexity": "easy",
+      "title": "Progress loader bar",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "A thin line at the top of the viewport fills from 0% to 100% as the page's critical assets load, then fades out. Replaces a spinner.",
+      "example": "DOMContentLoaded at 0%, fonts at 40%, LCP image at 80%, fully interactive at 100%. Bar fades in 300ms after hitting 100%.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "51",
+      "cat": "Loading",
+      "complexity": "hard",
+      "title": "Cinematic curtain open",
+      "tech": [
+        "Framer Motion",
+        "SVG"
+      ],
+      "desc": "Two panels slide apart (or a circle expands) to reveal the page on first load, like a projector starting. Only on the first visit (sessionStorage gate).",
+      "example": "Two dark panels split left and right over 1.2s, revealing the hero underneath. Doesn't repeat within the same session.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "52",
+      "cat": "Navigation",
+      "complexity": "medium",
+      "title": "Page transition morph",
+      "tech": [
+        "Framer Motion",
+        "Next.js",
+        "layoutId"
+      ],
+      "desc": "Navigating between pages morphs a shared element (the nav logo or a card) to bridge the old and new page. Avoids abrupt cuts.",
+      "example": "Click project card → card expands and morphs into the project detail page header. Back button: header contracts back into the grid card.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "53",
+      "cat": "Navigation",
+      "complexity": "easy",
+      "title": "Active section nav highlight",
+      "tech": [
+        "JS",
+        "IntersectionObserver"
+      ],
+      "desc": "Fixed nav links highlight as their corresponding section occupies most of the viewport. Smooth lerp of a highlight indicator pill.",
+      "example": "As you scroll from Projects to Experience, the nav pill slides from Projects to Experience with a spring transition.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "54",
+      "cat": "Navigation",
+      "complexity": "easy",
+      "title": "Back-to-top vinyl needle",
+      "tech": [
+        "JS",
+        "CSS"
+      ],
+      "desc": "A custom 'back to top' button styled as a vinyl needle/arm. Clicking it smoothly scrolls to the top and animates the needle lifting.",
+      "example": "Visible after 30% scroll. Styled as a minimalist tonearm. Click → smooth scroll to top, needle animates lifting off the record.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "55",
+      "cat": "Easter Egg",
+      "complexity": "easy",
+      "title": "Dev console signature",
+      "tech": [
+        "JS",
+        "console.log"
+      ],
+      "desc": "Styled ASCII art logged to the browser console with %c directives. Includes a hiring link.",
+      "example": "console.log('%c hey, you found the console.', 'color:#f59e0b') followed by formatted contact line.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "56",
+      "cat": "Easter Egg",
+      "complexity": "medium",
+      "title": "Konami code modal",
+      "tech": [
+        "JS",
+        "keydown"
+      ],
+      "desc": "Typing ↑↑↓↓←→←→BA triggers a secret modal with mini spinning vinyl and teaser. Dismissed on click or Esc.",
+      "example": "Type the sequence → modal fades in with 'You found it.', a 60px vinyl at 45RPM, and a teaser line.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "57",
+      "cat": "Easter Egg",
+      "complexity": "easy",
+      "title": "?debug=true overlay",
+      "tech": [
+        "JS",
+        "URL params"
+      ],
+      "desc": "Appending ?debug=true activates a fixed HUD showing section name, scroll %, ambient color, and frame rate.",
+      "example": "Visit ?debug=true → overlay shows § Projects | 34% | indigo | 60fps.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "58",
+      "cat": "Easter Egg",
+      "complexity": "easy",
+      "title": "Cursor disco idle",
+      "tech": [
+        "JS",
+        "setTimeout"
+      ],
+      "desc": "After 30s of no interaction, background pulses through hues and cursor leaves rainbow trails. Any input ends it instantly.",
+      "example": "30s idle → bg hue rotation begins, cursor trail appears. Move mouse → instant snap back. No announcement.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "59",
+      "cat": "Easter Egg",
+      "complexity": "easy",
+      "title": "Rage-click egg",
+      "tech": [
+        "JS",
+        "click counter"
+      ],
+      "desc": "Clicking the same element 7+ times in 2 seconds triggers a surprised animation — bounce, rotate, or confetti.",
+      "example": "Click the vinyl 7 times fast → shudders, plays scratch sound, briefly shows 'ok ok ok'.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "60",
+      "cat": "Easter Egg",
+      "complexity": "medium",
+      "title": "Hidden /now route",
+      "tech": [
+        "Next.js",
+        "Firebase"
+      ],
+      "desc": "A secret /now page (not linked anywhere) shows current project, reading, and listening — updated manually via Firebase.",
+      "example": "Visit /now → 'Building: Resumit v2 · Reading: SICP · Listening: Blue Note compilations.'",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "61",
+      "cat": "Easter Egg",
+      "complexity": "easy",
+      "title": "Theme unlock via click pattern",
+      "tech": [
+        "JS",
+        "localStorage"
+      ],
+      "desc": "Clicking specific elements in a specific order unlocks an alternate color theme. Persists in localStorage.",
+      "example": "Click logo → '2026' → vinyl in order → page repaints in sepia/amber theme. Survives refresh until cleared.",
+      "isNew": false,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "62",
+      "cat": "Easter Egg",
+      "complexity": "easy",
+      "title": "Alt+click secret link",
+      "tech": [
+        "JS",
+        "altKey"
+      ],
+      "desc": "Alt-clicking (Option on Mac) on the site logo navigates to a hidden page or reveals a hidden piece of content. Completely undocumented.",
+      "example": "Alt+click the logo → a hidden /colophon page appears with your build stack, fonts used, and design decisions.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "63",
+      "cat": "Easter Egg",
+      "complexity": "medium",
+      "title": "Long-press haptic",
+      "tech": [
+        "JS",
+        "Pointer Events",
+        "Vibration API"
+      ],
+      "desc": "Long-pressing (500ms+) on mobile on a project card triggers a subtle haptic pulse and reveals a hidden context menu with extra options.",
+      "example": "Long press Resumit card on mobile → vibrate 50ms, a small context sheet rises: Visit live · Copy link · Read case study.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "64",
+      "cat": "Easter Egg",
+      "complexity": "easy",
+      "title": "Visitor message board",
+      "tech": [
+        "Firebase",
+        "realtime"
+      ],
+      "desc": "A hidden page (/guestbook or /wall) lets visitors leave a short message. Messages appear in realtime. Linked only from the console egg.",
+      "example": "Console egg prints: 'leave a note: yoursite.com/wall'. The wall shows 1-line messages from previous visitors, newest first.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": false
+    },
+    {
+      "n": "65",
+      "cat": "Ambient",
+      "complexity": "hard",
+      "title": "Canvas ballpit physics",
+      "tech": [
+        "Canvas",
+        "JS",
+        "RAF"
+      ],
+      "desc": "A canvas-based interactive simulation of bouncing balls. Mouse movement repels the balls with simple physics forces.",
+      "example": "50 colorful balls bounce inside the container. Pointer hover pushes them away with spring-like force.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "66",
+      "cat": "Text & Type",
+      "complexity": "medium",
+      "title": "True Focus reveal",
+      "tech": [
+        "CSS",
+        "JS"
+      ],
+      "desc": "A text sentence where individual words blur/fade when not hovered. Hovering over a word focuses it while blurring adjacent words.",
+      "example": "Hovering over a word focuses it (blur 0px) and blurs surrounding words (blur 4px, opacity 0.4).",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "67",
+      "cat": "Card / Object",
+      "complexity": "hard",
+      "title": "Infinite draggable mesh",
+      "tech": [
+        "JS",
+        "CSS transform",
+        "Pointer Events"
+      ],
+      "desc": "A grid of cards that can be dragged infinitely in any direction. When cards scroll off-screen, they wrap around to the opposite side.",
+      "example": "Drag grid of project cards → moves. Moving past boundary wraps cards. Math-only, zero dependencies.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "68",
+      "cat": "Card / Object",
+      "complexity": "medium",
+      "title": "Border Beam glowing card",
+      "tech": [
+        "CSS",
+        "SVG"
+      ],
+      "desc": "A glowing light beam that races along the border of a card. Leverages CSS animation and SVG stroke-dashoffset.",
+      "example": "A sleek dark card has a bright border beam that cycles around the perimeter in 4s.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "69",
+      "cat": "Navigation",
+      "complexity": "medium",
+      "title": "Expanding spring search bar",
+      "tech": [
+        "JS",
+        "CSS transform"
+      ],
+      "desc": "A search button that springs open into a wide search bar on click. Magnifying glass handle morphs into an X button.",
+      "example": "Click button → width transitions to 200px. Hotkey ⌘K badge displays on focus.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "70",
+      "cat": "Navigation",
+      "complexity": "hard",
+      "title": "Command palette modal",
+      "tech": [
+        "JS",
+        "Keyboard Navigation"
+      ],
+      "desc": "A keyboard-activated search panel (Cmd+K or /) that lets you search and filter the actual playground effects database in real-time.",
+      "example": "Press Cmd+K or click to open. Type 'glitch' to filter. Up/Down/Enter navigates.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    },
+    {
+      "n": "71",
+      "cat": "Card / Object",
+      "complexity": "medium",
+      "title": "Gradient-spotlight card box",
+      "tech": [
+        "CSS custom properties",
+        "Pointer Events"
+      ],
+      "desc": "A grid of sleek dark card boxes where a mouse-hover spotlight gradient illuminates the border and background overlay in real-time.",
+      "example": "Hover grid → borders glow near pointer coordinate. Math-driven CSS variables update inline.",
+      "isNew": true,
+      "hasHtml": true,
+      "hasReact": true
+    }
+  ]
+}

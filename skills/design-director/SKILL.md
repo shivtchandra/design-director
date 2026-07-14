@@ -1,0 +1,128 @@
+---
+name: design-director
+description: >-
+  Plans visual direction for UIs and landing pages — mood, colors, fonts, layout,
+  and motion — then queries real design-system and portfolio-effect catalogs.
+  Use when building or restyling pages, picking a brand look, choosing palettes
+  or typography, or when the user asks an agent to think through design before coding.
+---
+
+# Design Director
+
+Autonomous design planning skill. **Plan before you code.** Pull tokens and motion recipes from searchable catalogs instead of inventing generic AI defaults.
+
+## When to Apply
+
+- User asks to build/restyle a landing page, portfolio, marketing site, or branded UI
+- User wants help choosing colors, fonts, mood, or interaction style
+- Brief is vague (“make it premium”, “dark and cinematic”, “brutalist”) and needs a locked direction
+
+For **effects-only** retrieval (already know the palette), prefer the sibling `portfolio-effects` skill.
+
+## Example prompts
+
+Users get better results when they name this skill and say **plan first**. Full copy-paste recipes (new page, revamp, plan-only, light touch): [references/example-prompts.md](references/example-prompts.md).
+
+```
+Use the design-director skill. Design a landing page for a boutique running brand called “Voltstride” — dark, athletic, editorial. Plan first (brief + tokens + 2–3 effects), then build a single page.
+```
+
+```
+Use the design-director skill. Plan first (brief + tokens + 2–3 effects), then revamp @src/pages/HomePage.jsx. Keep routing and copy; replace palette, type, and motion. Tone: dark, cinematic, technical.
+```
+
+```
+Use the design-director skill. For “Voltstride” — dark, athletic, editorial — write only the design brief. Do not write UI code yet.
+```
+
+## Workflow (required order)
+
+Copy and complete the checklist:
+
+```
+Design Director Progress:
+- [ ] 1. Brief (5 bullets)
+- [ ] 2. Direction (one sentence + anti-defaults check)
+- [ ] 3. Tokens via search-designs
+- [ ] 4. Motion via search-effects (2–4 max)
+- [ ] 5. Write design brief artifact
+- [ ] 6. Implement
+```
+
+### 1. Brief
+
+Extract from the user (infer only what is obvious; ask only if blocked):
+
+- Product / brand
+- Audience
+- Tone (3 adjectives max)
+- Constraints (framework, light/dark, no video, etc.)
+- Success look (one reference mood, not a full brand)
+
+### 2. Direction
+
+Pick **one** visual direction. Read [references/anti-defaults.md](references/anti-defaults.md) and reject banned clusters.
+
+### 3. Tokens
+
+Resolve script path relative to this skill folder:
+
+```bash
+node scripts/search-designs.js "<mood or brand keywords>"
+node scripts/search-designs.js --slug <slug>          # full token dump
+node scripts/search-designs.js "<query>" --tokens     # tokens for top hits
+```
+
+Rules:
+
+- Prefer one catalog system as the base; remix only if the brief needs it
+- Lock: canvas, ink, primary, 1–2 accents, display + body (+ mono if needed)
+- Use open-licensed Google Fonts or system stacks when the catalog font is proprietary (note the substitution in the brief)
+
+### 4. Motion
+
+Skill-local search includes bundled HTML (all effects) and React snippets when available:
+
+```bash
+node scripts/search-effects.js "<interaction keywords>"
+node scripts/search-effects.js --cat "Scroll" --complexity easy
+node scripts/search-effects.js "24" --react
+node scripts/search-effects.js "05" --html
+```
+
+In this widgets monorepo you can also use the root duplicate:
+
+```bash
+npm run search:effects -- "<id>" --react
+```
+
+Pick **2–4** effects that serve the brief. Do not stack every category. Prefer `--react` when present; otherwise use `--html` and adapt.
+
+### 5. Design brief artifact
+
+Before writing UI code, fill [references/brief-template.md](references/brief-template.md) (in chat or a short markdown file the user can see). Do not skip this step.
+
+### 6. Implement
+
+Apply locked tokens as CSS variables / Tailwind theme tokens. Match the host project stack. Wrap motion in `prefers-reduced-motion`. Never remove focus rings without a replacement.
+
+## Quality bar
+
+- One composition in the first viewport (not a dashboard) unless asked for a dashboard
+- Brand or product name is hero-level when it is a branded page
+- Animate `transform` / `opacity`; avoid layout thrash
+- Sound only after a user gesture
+
+## Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/search-designs.js` | Search ~74 design systems (colors, type) |
+| `scripts/search-effects.js` | Search ~71 effect recipes + print HTML/React snippets |
+| `scripts/build-indexes.js` | Regenerate JSON indexes (designs + effects + snippets) from this repo’s sources |
+
+## Additional resources
+
+- [references/example-prompts.md](references/example-prompts.md)
+- [references/brief-template.md](references/brief-template.md)
+- [references/anti-defaults.md](references/anti-defaults.md)
