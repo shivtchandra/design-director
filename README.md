@@ -13,7 +13,6 @@
   <a href="https://github.com/shivtchandra/design-director/stargazers"><img src="https://img.shields.io/github/stars/shivtchandra/design-director?style=flat&color=f54e00" alt="GitHub stars" /></a>
   <a href="https://github.com/shivtchandra/design-director/blob/main/LICENSE"><img src="https://img.shields.io/github/license/shivtchandra/design-director?color=111" alt="MIT License" /></a>
   <a href="https://github.com/shivtchandra/design-director/commits/main"><img src="https://img.shields.io/github/last-commit/shivtchandra/design-director?color=333" alt="Last commit" /></a>
-  <a href="https://skills.sh/shivtchandra/design-director"><img src="https://skills.sh/b/shivtchandra/design-director" alt="skills.sh" /></a>
 </p>
 
 <p align="center">
