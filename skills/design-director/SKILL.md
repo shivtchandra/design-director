@@ -47,6 +47,7 @@ Design Director Progress:
 - [ ] 4. Motion via search-effects (2–4 max)
 - [ ] 5. Write design brief artifact
 - [ ] 6. Implement
+- [ ] 7. Mobile / responsive guardrails
 ```
 
 ### 1. Brief
@@ -106,12 +107,23 @@ Before writing UI code, fill [references/brief-template.md](references/brief-tem
 
 Apply locked tokens as CSS variables / Tailwind theme tokens. Match the host project stack. Wrap motion in `prefers-reduced-motion`. Never remove focus rings without a replacement.
 
+### 7. Mobile / responsive guardrails
+
+Required before calling the work done. See [references/mobile-guardrails.md](references/mobile-guardrails.md).
+
+- Layout holds at ~375px width — **no horizontal scroll**
+- Primary actions work without hover (`click` / `tap`); touch targets ≥ **44×44px**
+- Body type stays readable on small screens; first viewport remains one clear composition
+- Cursor / magnet / canvas-heavy effects **degrade or disable** on coarse pointers and under `prefers-reduced-motion`
+- Fixed `100vh` heroes and sticky chrome must not hide content under mobile browser chrome
+
 ## Quality bar
 
 - One composition in the first viewport (not a dashboard) unless asked for a dashboard
 - Brand or product name is hero-level when it is a branded page
 - Animate `transform` / `opacity`; avoid layout thrash
 - Sound only after a user gesture
+- Pass the mobile / responsive checklist above
 
 ## Scripts
 
@@ -126,3 +138,4 @@ Apply locked tokens as CSS variables / Tailwind theme tokens. Match the host pro
 - [references/example-prompts.md](references/example-prompts.md)
 - [references/brief-template.md](references/brief-template.md)
 - [references/anti-defaults.md](references/anti-defaults.md)
+- [references/mobile-guardrails.md](references/mobile-guardrails.md)

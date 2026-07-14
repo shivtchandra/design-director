@@ -25,3 +25,4 @@ Hard bans for AI-generic looks. If the brief drifts toward these, pick a sharper
 - Expressive, purposeful type (from catalog or deliberate Google Font substitutes)
 - Atmosphere: gradients, photography, texture, or pattern — not empty white/black alone
 - Motion that earns its place (2–4 effects) with reduced-motion fallbacks
+- Layouts that hold at ~375px without hover-only primary actions (see mobile-guardrails.md)

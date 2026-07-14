@@ -41,6 +41,13 @@ Fill every field before implementing UI.
 - CTA group:
 - Dominant visual idea:
 
+## Mobile / responsive
+
+- **375px check:** (no horizontal scroll)
+- **Touch CTAs:** (targets ≥ 44px; not hover-only)
+- **Motion fallbacks:** (reduced-motion + coarse pointer)
+- **Notes:**
+
 ## Out of scope this pass
 
 -
