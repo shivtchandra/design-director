@@ -48,6 +48,13 @@ Fill every field before implementing UI.
 - **Motion fallbacks:** (reduced-motion + coarse pointer)
 - **Notes:**
 
+## Uniformity
+
+- **Theme entry / CSS variables:** (where tokens live)
+- **Type roles locked:** display / body / mono
+- **No section drift:** (same palette, radius, spacing, motion set site-wide)
+- **Revamp boundary:** (full unify / or partial — describe)
+
 ## Out of scope this pass
 
 -

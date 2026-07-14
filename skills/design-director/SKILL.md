@@ -48,6 +48,7 @@ Design Director Progress:
 - [ ] 5. Write design brief artifact
 - [ ] 6. Implement
 - [ ] 7. Mobile / responsive guardrails
+- [ ] 8. Site uniformity
 ```
 
 ### 1. Brief
@@ -105,7 +106,7 @@ Before writing UI code, fill [references/brief-template.md](references/brief-tem
 
 ### 6. Implement
 
-Apply locked tokens as CSS variables / Tailwind theme tokens. Match the host project stack. Wrap motion in `prefers-reduced-motion`. Never remove focus rings without a replacement.
+Apply locked tokens as **global** CSS variables / Tailwind theme tokens — one theme entry for the whole page/site. Match the host project stack. Reuse that theme in every section; do not restyle components with one-off colors or fonts. Wrap motion in `prefers-reduced-motion`. Never remove focus rings without a replacement.
 
 ### 7. Mobile / responsive guardrails
 
@@ -117,6 +118,14 @@ Required before calling the work done. See [references/mobile-guardrails.md](ref
 - Cursor / magnet / canvas-heavy effects **degrade or disable** on coarse pointers and under `prefers-reduced-motion`
 - Fixed `100vh` heroes and sticky chrome must not hide content under mobile browser chrome
 
+### 8. Site uniformity
+
+Required. See [references/uniformity.md](references/uniformity.md).
+
+- One locked system for the **entire** deliverable (not per-section vibes)
+- Shared tokens for color, type, radius, spacing
+- Motion limited to the brief’s 2–4 effects with a coherent feel
+
 ## Quality bar
 
 - One composition in the first viewport (not a dashboard) unless asked for a dashboard
@@ -124,6 +133,7 @@ Required before calling the work done. See [references/mobile-guardrails.md](ref
 - Animate `transform` / `opacity`; avoid layout thrash
 - Sound only after a user gesture
 - Pass the mobile / responsive checklist above
+- **One visual system across the site** — no section-level palette/font/motion drift
 
 ## Scripts
 
@@ -139,3 +149,4 @@ Required before calling the work done. See [references/mobile-guardrails.md](ref
 - [references/brief-template.md](references/brief-template.md)
 - [references/anti-defaults.md](references/anti-defaults.md)
 - [references/mobile-guardrails.md](references/mobile-guardrails.md)
+- [references/uniformity.md](references/uniformity.md)
